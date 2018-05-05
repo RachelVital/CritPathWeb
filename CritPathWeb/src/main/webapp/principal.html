@@ -1,0 +1,437 @@
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CritPATH - Welcome</title>
+	<!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">  -->
+	<link href="http://localhost:8080/CritPathWeb/css/main.css" rel="stylesheet" type="text/css"/>
+	
+	<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+	<link href="https://bootswatch.com/cosmo/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="http://localhost:8080/CritPathWeb/css/hummingbird-treeview.css" rel="stylesheet" type="text/css">
+	
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	 
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	 <script src="http://localhost:8080/CritPathWeb/js/hummingbird-treeview.js"></script>
+
+	
+	
+	<style>
+	body { background-color:#fafafa;}
+	.container { margin:150px auto; min-height:100vh;}
+	.stylish-input-group .input-group-addon{
+	    background: white !important;
+	}
+	.stylish-input-group .form-control{
+	    //border-right:0;
+	    box-shadow:0 0 0;
+	    border-color:#ccc;
+	}
+	.stylish-input-group button{
+	    border:0;
+	    background:transparent;
+	}
+	
+	.h-scroll {
+	    background-color: #fcfdfd;
+	    height: 260px;
+	    overflow-y: scroll;
+	}
+	</style>
+	
+	
+
+</head>
+<body>
+
+	<div class="container" >  
+       <div id="treeview_container" class="hummingbird-treeview well h-scroll-large" style="width: 40%; position: relative; float: left;">
+          <!-- <div id="treeview_container" class="hummingbird-treeview"> -->
+          <ul id="treeview" class="hummingbird-base">
+			 <li><i class="fa fa-minus"></i> <label> <input id="node-0" data-id="custom-0" type="checkbox"> Processos Empresa XXX</label>
+            	<ul style="display: block;">
+         			<li><i class="fa fa-plus"></i> <label> <input id="node-0-1" data-id="custom-1" type="checkbox">  Análise</label>
+						<ul>
+							<li><i class="hummingbirdNoParent"></i> <label> <input id="node-0-1-1" data-id="custom-1-1" type="checkbox">Definir artefatos de Requisitos</label></li>
+						</ul>
+					</li>
+					<li><i class="fa fa-plus"></i> <label> <input id="node-0-1-2" data-id="custom-1-2" type="checkbox"> Desenvolvimento</label>
+						<ul>
+							<li ><label><input class="hummingbirdNoParent" id="node-0-1-2-1" data-id="custom-1-2-1" type="checkbox" > Desenvolver CRUD</label>
+							</li>
+							<li><label> <input class="hummingbirdNoParent" id="node-0-1-2-2" data-id="custom-1-2-2" type="checkbox"> Atualizar ambiente de Teste</label>
+							</li>
+						</ul>
+					</li>
+					<li><i class="fa fa-plus"></i> <label> <input id="node-0-1-2" data-id="custom-1-2" type="checkbox"> Gestão</label>
+						<ul><li ><label> 
+							<input class="hummingbirdNoParent" id="node-0-1-2-1" data-id="custom-1-2-1" type="checkbox" > Atualização no ambiente de Produção</label>
+							</li>
+							<li><label> <input class="hummingbirdNoParent" id="node-0-1-2-2" data-id="custom-1-2-2" type="checkbox"> Realizar o planejamento da iteração</label>
+							</li>
+						</ul>
+					</li>
+		</ul>
+		</li>
+		</ul>
+		<button class="btn btn-primary" id="checkAll">Check All</button>
+  		<button class="btn btn-danger" id="uncheckAll">Uncheck All</button>
+  		<br><br>
+  		<!-- Button trigger modal -->
+  		 <!-- Trigger the modal with a button -->
+  		<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#newIteracao">Criar Iteração</button>
+		
+  		<br>
+  		<br>
+ </div>
+
+
+	
+		
+		
+
+			<div style="width: 58%; float: right; position: relative;">
+				<span class="singtext" >Tarefas da Iteração</span>
+				<br>
+				
+				 <div class="form-group">
+				    <label for="project">Projeto</label>
+				    <select class="form-control" id="projectSelect">
+				      <option>MCross</option>
+				      <option>SCarga</option>
+				      <option>Sislog</option>
+				      <option>SisNet</option>
+				      <option>TecInfo</option>
+				    </select>
+				  </div>
+				  
+				 <div class="form-group">
+				    <label for="iterationName">Iteração</label>
+				    <input type="text" class="form-control" id="iteracaoInput1" placeholder="Nome da Iteração">
+				  </div>
+			
+			</div> <!-- Fim DIV Iteracao -->
+
+            
+                
+  
+	  
+  </div> <!-- Fim DIV Conteiner --> 
+                
+  <div>       
+          <br>                
+          <br>
+          <footer  class="footer">                
+              <a href='#'>Terms of use</a> | 
+              <a href='#'>Privacy Policy</a> | 
+              <a href='#'>Contact us</a> | 
+              <a href='#'>Feedback</a> 
+              <p >©2018   Company All rights reserved </p>                 
+          </footer> <!--footer Section ends-->
+
+      </div>
+
+    	<!-- Modal -->
+		<div class="modal fade" id="newIteracao" tabindex="-1" role="dialog" aria-labelledby="newIteracao" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h6 class="modal-title" id="exampleModalLabel"><span class="singtext" >Crie a sua iteração</span></h6>
+		        
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body"  style="overflow-y: scroll; max-height:85%;  margin-top: 50px; margin-bottom:50px;">
+		      
+		   
+		      	 <label for="processName">Processo:</label>
+		      	
+				 <img src="http://localhost:8080/CritPathWeb/img/refinar_artefatos_requisito.png" style="max-width: 300px; max-height: 200px"/>
+			
+				
+			  	<div class="form-group">
+				    <label for="project">Operação </label>
+				    <select class="form-control" id="operationSelect">
+				      <option>Add</option>
+				      <option>Detail</option>
+				      <option>Group</option>
+				      <option value="modalTaskLink">Link</option>
+				      <option>Rename</option>
+				      <option>Remove</option>
+				      <option value="modalTaskSplit">Split</option>
+				      <option>Split Iteration</option>
+				    </select>
+			  	</div>
+			  		<div id="output">
+			  			<div class="infoModals" id="modalTaskLink" >
+			  			<span class="divider">
+				  		 	<div class="form-group, input-group-addon" id="operacao_task_link" >
+				  		 	
+						  			<div style = "text-align: left;">
+						  		 		<label for="taskName">Nome </label>
+							  		 	<input type="text" class="form-control" id="taskName" placeholder="Nome da Tarefa">
+								  	</div>
+								  <form class="form-inline" >
+									   <div class="col-xs-3, input-group-addon" style = "text-align: left;">
+									    <label for="taskWork">Esforço </label>
+									   <input type="text" class="form-control" id="taskWork" placeholder="Esforço" maxlength="4">
+									   </div>
+									   <div class="col-xs-3, input-group-addon">
+									   <select class="form-control" id="typeWork">
+									      <option selected="selected">Dia</option>
+									      <option>Hora</option>
+									      <option>Story Point</option>
+									    </select>
+									   </div>
+								   </form>
+							   		<br>
+								    <div class="form-group" style = "text-align: left;">
+									  <label for="comment">Descrição:</label>
+									  <textarea class="form-control" rows="5" id="commentTask" placeholder="Insira a descrição aqui"></textarea>
+									</div> 
+									
+									<div class="form-group" style = "text-align: left;">
+									  <label for="predecessorasTable">Predecessoras:</label>
+									  <table class="table table-sm">
+										  <thead>
+										    <tr>
+										      <th scope="col">#</th>
+										      <th scope="col">Nome da Tarefa</th>
+										      <th scope="col">Tipo Prec.</th>
+										      <th scope="col">Antec./Espera</th>
+										    </tr>
+										  </thead>
+										  <tbody>
+										    <tr>
+										      <th scope="row">1</th>
+										      <td>Tarefa 1 </td>
+										      <td class="align-top">
+										      	
+											      	<select class="form-control, form-control form-control-sm" id="typeWork" >
+												      <option selected="selected">TI</option>
+												      <option>II</option>
+												      <option>IT</option>
+												      <option>TT</option>
+								    				</select>
+							    			
+							    			</td>
+							    			<td>
+										  		 <div class="form-group">
+										       		<input id="number" type="number" value="0" class="form-control">
+										  
+										       	</div>
+										       </td>
+										    </tr>
+										    
+										  </tbody>
+										</table>
+									  
+									</div> <!-- Fim DIV tabela Predecessoras -->
+									</div> <!-- operacao_task_link -->
+								</span>   
+						  	</div> <!-- Fim DIV Operacao Link -->
+						  	
+						  	<div class="infoModals" id="modalTaskSplit">
+						  		<ul class="nav nav-pills">
+								    <li class="active"><a data-toggle="pill" href="#splitTask1">Tarefa 1</a></li>
+								    <li><a data-toggle="pill" href="#splitTask2">Tarefa 2</a></li>
+								    <li><a data-toggle="pill" href="#splitTaskM">+</a></li>
+								  
+								  </ul>
+						  	 <div class="tab-content">	
+					  			
+				  		 		<div class="form-group, input-group-addon, tab-pane fade in active" id="splitTask1" >
+				  		 		
+								  			<div style = "text-align: left;">
+								  		 		<label for="taskName">Nome </label>
+									  		 	<input type="text" class="form-control" id="taskNameSplit" placeholder="Nome da Tarefa">
+										  	</div>
+										  	<form class="form-inline" >
+											   <div class="col-xs-3, input-group-addon" style = "text-align: left;">
+											    <label for="taskWork">Esforço </label>
+											   <input type="text" class="form-control" id="taskWork" placeholder="Esforço" maxlength="4">
+											   </div>
+											   <div class="col-xs-3, input-group-addon">
+											   <select class="form-control" id="typeWork">
+											      <option selected="selected">Dia</option>
+											      <option>Hora</option>
+											      <option>Story Point</option>
+											    </select>
+											   </div>
+										   </form>
+								   			<br>
+										    <div class="form-group" style = "text-align: left;">
+											  <label for="comment">Descrição:</label>
+											  <textarea class="form-control" rows="5" id="commentTask" placeholder="Insira a descrição aqui"></textarea>
+											</div> 
+										
+											<div class="form-group" style = "text-align: left;">
+											  <label for="predecessorasTable">Predecessoras:</label>
+											  <table class="table table-sm">
+												  <thead>
+												    <tr>
+												      <th scope="col">#</th>
+												      <th scope="col">Nome da Tarefa</th>
+												      <th scope="col">Tipo Prec.</th>
+												      <th scope="col">Antec./Espera</th>
+												    </tr>
+												  </thead>
+												  <tbody>
+												    <tr>
+												      <th scope="row">1</th>
+												      <td>Tarefa 1 </td>
+												      <td class="align-top">
+												      	
+													      	<select class="form-control, form-control form-control-sm" id="typeWork" >
+														      <option selected="selected">TI</option>
+														      <option>II</option>
+														      <option>IT</option>
+														      <option>TT</option>
+										    				</select>
+									    			
+									    			</td>
+									    			<td>
+												  		 <div class="form-group">
+												       		<input id="number" type="number" value="0" class="form-control">
+												  
+												       	</div>
+												       </td>
+												    </tr>
+												    
+												  </tbody>
+												</table>
+											  
+											</div> <!-- Fim DIV tabela Predecessoras -->
+										</div> <!-- Fim DIV splitTask1 -->
+									
+									<!-- SplitTask2 -->
+									<div class="form-group, input-group-addon, tab-pane fade" id="splitTask2" >
+				  		 				
+							  			<div style = "text-align: left;">
+							  		 		<label for="taskNameSplit2">Nome </label>
+								  		 	<input type="text" class="form-control" id="taskNameSplit2" placeholder="Nome da Tarefa 2">
+									  	</div>
+									  	<form class="form-inline" >
+										   <div class="col-xs-3, input-group-addon" style = "text-align: left;">
+										    <label for="taskWork2">Esforço </label>
+										   <input type="text" class="form-control" id="taskWork2" placeholder="Esforço" maxlength="4">
+										   </div>
+										   <div class="col-xs-3, input-group-addon">
+										   <select class="form-control" id="typeWork2">
+										      <option selected="selected">Dia</option>
+										      <option>Hora</option>
+										      <option>Story Point</option>
+										    </select>
+										   </div>
+									   </form>
+							   			<br>
+									    <div class="form-group" style = "text-align: left;">
+										  <label for="commentTask2">Descrição:</label>
+										  <textarea class="form-control" rows="5" id="commentTask2" placeholder="Insira a descrição aqui"></textarea>
+										</div> 
+									
+										<div class="form-group" style = "text-align: left;">
+										  <label for="predecessorasTable2">Predecessoras:</label>
+										  <table class="table table-sm" id="predecessorasTable2">
+											  <thead>
+											    <tr>
+											      <th scope="col">#</th>
+											      <th scope="col">Nome da Tarefa</th>
+											      <th scope="col">Tipo Prec.</th>
+											      <th scope="col">Antec./Espera</th>
+											    </tr>
+											  </thead>
+											  <tbody>
+											    <tr>
+											      <th scope="row">1</th>
+											      <td>Tarefa 1 </td>
+											      <td class="align-top">
+											      	
+												      	<select class="form-control, form-control form-control-sm" id="typeWork" >
+													      <option selected="selected">TI</option>
+													      <option>II</option>
+													      <option>IT</option>
+													      <option>TT</option>
+									    				</select>
+								    			
+								    			</td>
+								    			<td>
+											  		 <div class="form-group">
+											       		<input id="number" type="number" value="0" class="form-control">
+											  
+											       	</div>
+											       </td>
+											    </tr>
+											    
+											  </tbody>
+											</table>
+										  
+										</div> <!-- Fim DIV tabela Predecessoras -->
+									
+									</div> <!-- Fim DIV splitTask2 -->
+						 		
+				  		 		
+				  		 		
+				  		 		   
+						  	 </div> <!-- Fim DiV TabContent -->	
+						  			
+						  	</div><!-- Fim DIV Split -->
+					  	
+			  		 </div><!-- Fim DIV output -->
+			  		 
+			  	
+		      </div> <!-- Div modal-body -->
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		        <button type="button" class="btn btn-primary">Save</button>
+		      </div>
+		    </div>
+		  </div>
+		</div><!-- DIV Fim modal -->        
+
+	<script>
+		$("#treeview").hummingbird();
+		$( "#checkAll" ).click(function() {
+		  $("#treeview").hummingbird("checkAll");
+		});
+		$( "#uncheckAll" ).click(function() {
+		  $("#treeview").hummingbird("uncheckAll");
+		});
+		$( "#collapseAll" ).click(function() {
+		  $("#treeview").hummingbird("collapseAll");
+		});
+		$( "#checkNode" ).click(function() {
+		  $("#treeview").hummingbird("checkNode",{attr:"id",name: "node-0-2-2",expandParents:false});
+		});
+	</script>
+	<script type="text/javascript">
+	
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-36251023-1']);
+	  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+	  _gaq.push(['_trackPageview']);
+	
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	  $(function() {
+		  $('#operationSelect').change(function(){
+		    $('.infoModals').hide();
+		    $('#' + $(this).val()).show();
+		  });
+		});
+	
+	</script>
+</body>
+</html>
